@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+<form method="POST" action="{{url_for('main.update_workout',workout_id=workout.id)}}">
+  <h2>Update workout</h2>
+  {% with messages=get_flashed_messages()%}
+  {% if messages%}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {%endif %}
+  {%endwith%}
+  <div class="mb-3">
+  <label for="pushups" class="form-label">Pushups</label>
+    <input type="number" class="form-control" id="pushups" name="pushups" placeholder="How many pushups did you do?" style="width: 300px;">
+  </div>
+  <div class="mb-3">
+    <label for="comment" class="form-label">Comment</label>
+    <input type="text" class="form-control" id="comment" name="comment" placeholder="Add a comment" style="width: 300px;">
+  </div>
+  <button type="submit" class="btn btn-primary button">Update</button>
+</form>
+</div>
+
+
+
+{% endblock %}
