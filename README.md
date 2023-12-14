@@ -1,4 +1,5 @@
 Push-Up Logger
+Link to Live website:https://fitnesstracker-qrq8.onrender.com
 
 Track your daily push-up progress with this user-friendly web application. Sign up, log in, and record the number of push-ups you complete each day. 
 You can also edit or delete your entries for accurate and effortless monitoring of your fitness journey.
@@ -32,7 +33,7 @@ Technologies Used:
  ◼User Interface: Jinja2, A template engine that can be integrated with Flask for generating HTML pages.
  ◼Authentication and Security:Flask-Security: An extension for adding security features like session management, role-based access control, and more.
 
-Author:Sahye Oghenemine
+Author:Shaye Oghenemine
 
 
 contributions and feedback from the community are welcome. Let's stay fit and keep pushing our limits together!
